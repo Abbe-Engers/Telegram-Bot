@@ -1,0 +1,54 @@
+@keyframes fade-out-html {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fade-in-html {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#A___ {
+  opacity: 1;
+  position: absolute;
+  height: 20%;
+  width: auto;
+  animation-name: fade-out-html;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
+
+.inhoud {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  animation-name: fade-in-html;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
